@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;  
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px; 
+  height: 100%;  
+  overflow-y: auto; 
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.pokemon-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-card img {
+  width: 96px;
+  height: 96px;
+}
+
+.number {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.pokemon-card h2 {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.types {
+  margin-top: 0.5rem;
+}
+
+.type {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.planta {
+  background-color: #78C850;
+}
+
+.veneno {
+  background-color: #A040A0;
+}
+
+.fuego {
+  background-color: #F08030;
+}
+
+.agua {
+  background-color: #6890F0;
+}
+
+.volador {
+  background-color: #A890F0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
